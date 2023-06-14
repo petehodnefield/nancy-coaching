@@ -6,6 +6,7 @@ import signature from "../../public/assets/images/signature.png";
 import BtnPrimaryXl from "@/components/Buttons/BtnPrimaryXl";
 import heroImage from "../../public/assets/images/hero-image.png";
 import aboutImage from "../../public/assets/images/about.png";
+import testimonialImage from "../../public/assets/images/testimonial-image.png";
 import BtnPrimary from "@/components/Buttons/BtnPrimary";
 export default function Home() {
   return (
@@ -65,6 +66,31 @@ export default function Home() {
             <Link href={""}>
               <BtnPrimary btnText={"My Story"} />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="section__container section__container--centered section__container--primary">
+        <div>
+          <h2 className="title title--uppercase">Testimonials</h2>
+          <h3 className="title title--lg">Hear from our students</h3>
+          <div className="testimonial rounded">
+            <div className="testimonial__img-wrapper">
+              <Image
+                className="cover"
+                src={testimonialImage}
+                alt="A testimonial image"
+              />
+            </div>
+            <p className="testimonial__text">
+              "Working with Nancy Hodnefield has been an absolute game-changer!
+              Her insightful guidance and unwavering support have empowered me
+              to overcome my fears and achieve remarkable personal growth.
+              Nancy's coaching has truly transformed my life, and I couldn't be
+              more grateful for her expertise and dedication."
+            </p>
+            <p className="testimonial__name">~ Sarah Thompson</p>
           </div>
         </div>
       </section>

@@ -53,7 +53,6 @@ ul {
 /* Titles styling */
 .title {
   font-weight: 500;
-  max-width: 660px;
 }
 .title--lg {
   font-size: 2.5rem;
@@ -67,6 +66,12 @@ ul {
   font-weight: 400;
   font-size: 1.25rem;
   margin-bottom: 1.25rem;
+}
+.title--uppercase {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 /* Button styles */
 .btn {
@@ -93,6 +98,13 @@ ul {
   align-items: center;
   min-height: 600px;
   position: relative;
+}
+.section__container--centered {
+  text-align: center;
+}
+.section__container--primary {
+  background-color: var(--primary);
+  color: var(--white);
 }
 .section-card__wrapper {
   display: flex;
@@ -151,4 +163,32 @@ ul {
 .social-icon {
   color: var(--dark);
   font-size: 0.875rem;
+}
+
+/* Testimonials Styling */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  padding: 2rem;
+}
+.testimonial__img-wrapper {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: var(--darklight);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.testimonial__text {
+  max-width: 660px;
+  font-size: 1.125rem;
+  margin-bottom: 0.25rem;
+  color: var(--dark);
+}
+.testimonial__name {
+  font-size: 0.875rem;
+  color: var(--darklight);
 }
