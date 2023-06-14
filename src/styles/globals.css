@@ -37,7 +37,10 @@ a:hover {
 ul {
   list-style: none;
 }
-
+/* Font weight and style */
+.thin {
+  font-weight: 300;
+}
 /* Border Radius */
 .rounded {
   border-radius: 0.5rem;
@@ -189,8 +192,14 @@ ul {
   justify-content: center;
   height: 1.5rem;
   width: 1.5rem;
-  border: 1px solid var(--dark);
   border-radius: 50%;
+}
+.social-icon__wrapper--white {
+  border: none;
+  background-color: var(--white);
+}
+.social-icon__wrapper--dark {
+  border: 1px solid var(--dark);
 }
 .social-icon {
   color: var(--dark);
@@ -292,14 +301,25 @@ ul {
   font-weight: 500;
   margin-bottom: 0.25rem;
 }
+.form__label--thin {
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
 .form__input {
-  height: 3rem;
-  width: 20rem;
   border-radius: 0.5rem;
   border: none;
   padding-left: 1rem;
   font-size: 1rem;
   font-weight: 500;
+}
+
+.form__input--lg {
+  height: 3rem;
+  width: 20rem;
+}
+.form__input--sm {
+  height: 2rem;
+  width: 12rem;
 }
 .form__input--hollow {
   background-color: transparent;
@@ -309,4 +329,89 @@ ul {
 .form__input--hollow:focus {
   border: 2px solid var(--white);
   transition: 300ms ease-in-out;
+}
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary);
+  color: var(--white);
+  min-height: 250px;
+  padding-top: 1.5rem;
+}
+.footer__columns-wrapper {
+  width: 100%;
+  display: flex;
+  max-width: 70rem;
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__column--lg {
+  flex: 1.5 1 0;
+  width: 0;
+}
+.footer__column--sm {
+  flex: 1 1 0;
+  width: 0;
+}
+
+.footer__copyright {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+.footer__link--sm {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.footer__terms-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.footer__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.footer__text {
+  font-size: 0.875rem;
+}
+.footer__form {
+  margin-bottom: 1rem;
+}
+.footer__form-wrapper {
+  position: relative;
+  margin-top: 0.5rem;
+}
+.footer__form-submit-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 2rem;
+  width: 2rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__form-submit-btn:hover {
+  opacity: 0.8;
+  transition: 200ms ease-in-out;
+}
+.footer__form-icon {
+  font-size: 1.25rem;
 }

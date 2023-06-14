@@ -6,13 +6,22 @@ import styles from "@/styles/Header.module.css";
 const SocialIcons = () => {
   return (
     <div className={`social-icons__wrapper ${styles.social__icons}`}>
-      <Link href="#" className="social-icon__wrapper">
+      <Link
+        href="#"
+        className="social-icon__wrapper social-icon__wrapper--dark"
+      >
         <Icon className="social-icon" icon="fa6-brands:linkedin-in" />
       </Link>
-      <Link href="#" className="social-icon__wrapper">
+      <Link
+        href="#"
+        className="social-icon__wrapper social-icon__wrapper--dark"
+      >
         <Icon className="social-icon" icon="fa6-brands:instagram" />
       </Link>
-      <Link href="#" className="social-icon__wrapper">
+      <Link
+        href="#"
+        className="social-icon__wrapper social-icon__wrapper--dark"
+      >
         <Icon className="social-icon" icon="fa6-brands:facebook" />
       </Link>
     </div>

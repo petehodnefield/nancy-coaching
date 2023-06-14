@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "./Header/Header";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import Footer from "./Footer/Footer";
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export default function Layout({ children }) {
@@ -14,6 +15,7 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <main className={`${pjs.className}`}>{children}</main>
+      <Footer />
     </>
   );
 }
