@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+}
+
+.header__logo {
+  font-size: 2rem;
+  /* flex-basis: 1;
+  width: 0; */
+}
+
+.nav__main {
+  /* flex-basis: 1;
+  width: 0; */
+}
+.nav__ul {
+  display: flex;
+  gap: 2rem;
+}
