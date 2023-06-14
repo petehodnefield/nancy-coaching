@@ -178,16 +178,23 @@ export default function Home() {
               Get access to our free career guide and start becoming your best
               self
             </h3>
-            <form id="homepageForm">
+            <form
+              id="homepageForm"
+              action="https://Instagram.us18.list-manage.com/subscribe/post"
+              method="POST"
+            >
+              <input type="hidden" name="u" value="f388accd24cd6540958e58484" />
+              <input type="hidden" name="id" value="477bd3de93" />
               {/* Name input */}
               <div className="form__label-input-wrapper">
                 <label className="form__label" htmlFor="name">
                   Name
                 </label>
                 <input
-                  className="form__input form__input--hollow"
+                  className="form__input form__input--lg form__input--hollow"
                   type="text"
                   id="name"
+                  name="MERGE1"
                 />
               </div>
               {/* Email input */}
@@ -196,9 +203,10 @@ export default function Home() {
                   Email Address
                 </label>
                 <input
-                  className="form__input form__input--hollow"
+                  className="form__input form__input--lg form__input--hollow"
                   type="email"
                   id="email"
+                  name="MERGE0"
                 />
               </div>{" "}
               <BtnPrimary btnText={"Download"} btnType={"submit"} />

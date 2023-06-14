@@ -62,11 +62,12 @@ const Footer = () => {
         <div className="footer__column footer__column--sm">
           <h3 className="footer__subtitle">Sign up</h3>
           <form
-            onSubmit={handleFooterFormSubmit}
+            action="https://formsubmit.co/4fa4996dc920551c7b4515f7cb84bb72"
+            method="POST"
             className="footer__form"
-            action=""
             id="footerForm"
           >
+            <input type="hidden" name="_next" value="https://mongamonga.com" />
             <label
               htmlFor="signUp"
               className="thin footer__text form__label--thin"
@@ -78,6 +79,7 @@ const Footer = () => {
                 className="form__input form__input--hollow form__input--sm"
                 type="email"
                 id="signUp"
+                name="email"
                 required
               />
               <button className="footer__form-submit-btn" type="submit">
