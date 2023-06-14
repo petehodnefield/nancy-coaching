@@ -4,6 +4,7 @@
   --dark: #2c2c2c;
   --darklight: #525252;
   --glass: rgba(255, 255, 255, 0.8);
+  --bs1: 0 8px 16px 0 rgba(44, 44, 44, 0.15);
 }
 
 * {
@@ -28,11 +29,75 @@ a {
   text-decoration: none;
   font-family: inherit;
 }
-
+a:hover {
+  opacity: 0.8;
+  transition: 200ms ease-in-out;
+}
 ul {
   list-style: none;
 }
 
+/* Border Radius */
+.rounded {
+  border-radius: 0.5rem;
+}
+.rounded-lg {
+  border-radius: 1rem;
+}
+
+/* Titles styling */
+.title {
+  font-weight: 500;
+  max-width: 660px;
+}
+.title--lg {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+.title--sm {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+/* Button styles */
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  height: 3rem;
+  width: 11.25rem;
+  cursor: pointer;
+  position: relative;
+  padding-top: 2px;
+}
+.btn--primary {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.btn--xl {
+  width: 14rem;
+}
+/* Section and Section Cards */
+.section-card {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  box-shadow: var(--bs1);
+  width: fit-content;
+}
+.section-card--glass {
+  background-color: var(--glass);
+}
+
+.section__bg-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 /* Social Icons style */
 .social-icons__wrapper {
   display: flex;
