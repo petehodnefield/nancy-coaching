@@ -2,12 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+// Components
 import signature from "../../public/assets/images/signature.png";
 import BtnPrimaryXl from "@/components/Buttons/BtnPrimaryXl";
+import BtnPrimary from "@/components/Buttons/BtnPrimary";
+
+// Images
 import heroImage from "../../public/assets/images/hero-image.png";
 import aboutImage from "../../public/assets/images/about.png";
 import testimonialImage from "../../public/assets/images/testimonial-image.png";
-import BtnPrimary from "@/components/Buttons/BtnPrimary";
+import bossImage from "../../public/assets/images/leadership.jpg";
+import blueprintImage from "../../public/assets/images/career-success.jpg";
+import transformImage from "../../public/assets/images/transform.jpg";
+
 export default function Home() {
   return (
     <main className={`${styles.main} `}>
@@ -72,9 +79,9 @@ export default function Home() {
 
       {/* Testimonials */}
       <section className="section__container section__container--centered section__container--primary">
-        <div>
+        <div className="section-card__wrapper section-card__wrapper--column">
           <h2 className="title title--uppercase">Testimonials</h2>
-          <h3 className="title title--lg">Hear from our students</h3>
+          <h3 className="title title--lg">Hear From Our Students</h3>
           <div className="testimonial rounded">
             <div className="testimonial__img-wrapper">
               <Image
@@ -91,6 +98,67 @@ export default function Home() {
               more grateful for her expertise and dedication."
             </p>
             <p className="testimonial__name">~ Sarah Thompson</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Growth Solutions Section */}
+      <section className="section__container section__container--centered">
+        <div className="section-card__wrapper section-card__wrapper--column">
+          <h2 className="title title--uppercase">Growth Solutions</h2>
+          <h3 className="title title--lg">Elevate Your Career</h3>
+          {/* Solution cards */}
+          <div className="growth-cards__wrapper">
+            {/* Solution 1 */}
+            <Link href={""}>
+              <div className="growth-card__wrapper">
+                <Image
+                  src={bossImage}
+                  className="cover growth-card__img"
+                  alt="Someone holding a coffee mug that says Like a Boss"
+                />
+                <div className="growth-card__text-wrapper">
+                  <h4 className="growth-card__title">Leadership Excellence</h4>
+                  <p className="growth-card__text">
+                    Develop exceptional leadership skills for greater impact.
+                  </p>
+                </div>
+              </div>
+            </Link>
+            {/* Solution 2 */}
+            <Link href={""}>
+              <div className="growth-card__wrapper">
+                <Image
+                  src={blueprintImage}
+                  className="cover growth-card__img"
+                  alt="A woman sitting at a chair smiling away from the camera."
+                />
+                <div className="growth-card__text-wrapper">
+                  <h4 className="growth-card__title">
+                    Career Success Blueprint
+                  </h4>
+                  <p className="growth-card__text">
+                    Unlock your career potential and thrive professionally.
+                  </p>
+                </div>
+              </div>
+            </Link>
+            {/* Solution 3 */}
+            <Link href={""}>
+              <div className="growth-card__wrapper">
+                <Image
+                  src={transformImage}
+                  className="cover growth-card__img"
+                  alt="A sign that says Difficult roads lead to beautiful destinations."
+                />
+                <div className="growth-card__text-wrapper">
+                  <h4 className="growth-card__title">Transform Your Life</h4>
+                  <p className="growth-card__text">
+                    Experience profound personal growth and achieve your dreams.
+                  </p>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

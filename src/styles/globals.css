@@ -4,6 +4,7 @@
   --dark: #2c2c2c;
   --darklight: #525252;
   --glass: rgba(255, 255, 255, 0.8);
+  --glassdark: rgba(44, 44, 44, 0.9);
   --bs1: 0 8px 16px 0 rgba(44, 44, 44, 0.15);
 }
 
@@ -112,6 +113,12 @@ ul {
   width: 100%;
   max-width: 70rem;
 }
+.section-card__wrapper--row {
+  flex-direction: row;
+}
+.section-card__wrapper--column {
+  flex-direction: column;
+}
 .section-card {
   display: flex;
   flex-direction: column;
@@ -191,4 +198,58 @@ ul {
 .testimonial__name {
   font-size: 0.875rem;
   color: var(--darklight);
+}
+/* Growth Solutions Cards Styling */
+.growth-cards__wrapper {
+  display: flex;
+  gap: 2rem;
+}
+.growth-card__wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 22rem;
+  max-width: 22rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--bs1);
+}
+.growth-card__wrapper:hover {
+  opacity: 0.95;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+.growth-card__img {
+  position: absolute;
+  height: 100%;
+  border-radius: 0.5rem;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.growth-card__text-wrapper {
+  background-color: var(--glassdark);
+  color: var(--white);
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1.5rem;
+  text-align: left;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.growth-card__text-wrapper:hover {
+  background-color: var(--dark);
+  transition: 200ms ease-in-out;
+}
+.growth-card__title {
+  font-size: 1.5rem;
+  font-size: 500;
+  margin-bottom: 0.25rem;
+}
+.growth-card__text {
+  font-size: 1rem;
+  font-weight: 400;
 }
