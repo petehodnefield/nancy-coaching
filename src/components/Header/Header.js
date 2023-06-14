@@ -10,11 +10,13 @@ import SocialIcons from "../SocialIcons/SocialIcons";
 const Header = () => {
   return (
     <header className={`${pjs.className} ${styles.header}`}>
-      <Link className={styles.header__logo} href="/">
-        Nancy Hodnefield
-      </Link>
-      <Nav />
-      <SocialIcons />
+      <div className={styles.header__content}>
+        <Link className={styles.header__logo} href="/">
+          Nancy Hodnefield
+        </Link>
+        <Nav />
+        <SocialIcons />
+      </div>
     </header>
   );
 };
