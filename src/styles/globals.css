@@ -55,6 +55,10 @@ ul {
 .title {
   font-weight: 500;
 }
+.title--xl {
+  font-size: 3rem;
+  margin-bottom: 1.25rem;
+}
 .title--lg {
   font-size: 2.5rem;
   margin-bottom: 1.25rem;
@@ -64,6 +68,11 @@ ul {
   margin-bottom: 1.25rem;
 }
 .title--sm {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+.title--xsm {
   font-weight: 400;
   font-size: 1.25rem;
   margin-bottom: 1.25rem;
@@ -151,6 +160,22 @@ ul {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+.section__bg-img--filter {
+  filter: brightness(30%) blur(1px);
+}
+
+.section-cta__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 70rem;
+}
+.section-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--white);
 }
 /* Social Icons style */
 .social-icons__wrapper {
@@ -252,4 +277,36 @@ ul {
 .growth-card__text {
   font-size: 1rem;
   font-weight: 400;
+}
+/* Form Styling */
+.form__label-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.form__label-input-wrapper--last {
+  margin-bottom: 2rem;
+}
+.form__label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.form__input {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 0.5rem;
+  border: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.form__input--hollow {
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.form__input--hollow:focus {
+  border: 2px solid var(--white);
+  transition: 300ms ease-in-out;
 }

@@ -21,6 +21,7 @@ export default function Home() {
       <section className={`${styles.hero__wrapper} section__container`}>
         <Image
           className={`${styles.hero__image} section__bg-img`}
+          alt="Nancy Hodnefield sitting in her office full of plants smiling at the camera."
           src={heroImage}
         />
         <div className={`section-card__wrapper ${styles.section__wrapper}`}>
@@ -159,6 +160,49 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="section__container">
+        <Image
+          className={`${styles.hero__image} section__bg-img section__bg-img--filter`}
+          src={heroImage}
+          alt="Nancy Hodnefield sitting in her office full of plants smiling at the camera."
+        />
+        <div className="section-cta__wrapper">
+          <div className="section-cta">
+            <h2 className="title title--xl">Ready to level up your career?</h2>
+            <h3 className="title title--sm">
+              Get access to our free career guide and start becoming your best
+              self
+            </h3>
+            <form id="homepageForm">
+              {/* Name input */}
+              <div className="form__label-input-wrapper">
+                <label className="form__label" htmlFor="name">
+                  Name
+                </label>
+                <input
+                  className="form__input form__input--hollow"
+                  type="text"
+                  id="name"
+                />
+              </div>
+              {/* Email input */}
+              <div className="form__label-input-wrapper form__label-input-wrapper--last ">
+                <label className="form__label" htmlFor="email">
+                  Email Address
+                </label>
+                <input
+                  className="form__input form__input--hollow"
+                  type="email"
+                  id="email"
+                />
+              </div>{" "}
+              <BtnPrimary btnText={"Download"} btnType={"submit"} />
+            </form>
           </div>
         </div>
       </section>
