@@ -44,7 +44,12 @@ ul {
 .rounded-lg {
   border-radius: 1rem;
 }
-
+/* Image styling */
+.cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
 /* Titles styling */
 .title {
   font-weight: 500;
@@ -52,6 +57,10 @@ ul {
 }
 .title--lg {
   font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+.title--md {
+  font-size: 2rem;
   margin-bottom: 1.25rem;
 }
 .title--sm {
@@ -78,6 +87,19 @@ ul {
   width: 14rem;
 }
 /* Section and Section Cards */
+.section__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  position: relative;
+}
+.section-card__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 70rem;
+}
 .section-card {
   display: flex;
   flex-direction: column;
@@ -87,6 +109,19 @@ ul {
 }
 .section-card--glass {
   background-color: var(--glass);
+}
+.section-card--white {
+  background-color: var(--white);
+}
+.section-card__text {
+  font-size: 1.125rem;
+  max-width: 660px;
+}
+.section-card__text-mgsm {
+  margin-bottom: 1rem;
+}
+.section-card__text-mglg {
+  margin-bottom: 1.5rem;
 }
 
 .section__bg-img {
