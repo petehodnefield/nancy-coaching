@@ -7,22 +7,22 @@ const Nav = () => {
     <nav className={styles.nav__main}>
       <ul className={styles.nav__ul}>
         <li className="nav__li">
-          <Link className="nav__link" href={"/"}>
+          <Link className={styles.nav__link} href={"/"}>
             Home
           </Link>
         </li>
         <li className="nav__li">
-          <Link className="nav__link" href={"/about"}>
+          <Link className={styles.nav__link} href={"/about"}>
             About
           </Link>
         </li>
         <li className="nav__li">
-          <Link className="nav__link" href={"/coaching"}>
+          <Link className={styles.nav__link} href={"/coaching"}>
             Coaching
           </Link>
         </li>
         <li className="nav__li">
-          <Link className="nav__link" href={"/contact"}>
+          <Link className={styles.nav__link} href={"/contact"}>
             Contact
           </Link>
         </li>

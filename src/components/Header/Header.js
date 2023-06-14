@@ -5,6 +5,7 @@ import Nav from "./Nav";
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 import styles from "@/styles/Header.module.css";
+import SocialIcons from "../SocialIcons/SocialIcons";
 
 const Header = () => {
   return (
@@ -13,6 +14,7 @@ const Header = () => {
         Nancy Hodnefield
       </Link>
       <Nav />
+      <SocialIcons />
     </header>
   );
 };

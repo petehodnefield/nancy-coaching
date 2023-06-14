@@ -32,3 +32,23 @@ a {
 ul {
   list-style: none;
 }
+
+/* Social Icons style */
+.social-icons__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.social-icon__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: 1px solid var(--dark);
+  border-radius: 50%;
+}
+.social-icon {
+  color: var(--dark);
+  font-size: 0.875rem;
+}
