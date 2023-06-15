@@ -6,14 +6,20 @@ const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 import styles from "@/styles/Header.module.css";
 import SocialIcons from "../SocialIcons/SocialIcons";
+import Hamburger from "../Hamburger/Hamburger";
 
-const Header = () => {
+const Header = ({ hamburgerOpen, setHamburgerOpen }) => {
   return (
     <header className={`${pjs.className} ${styles.header}`}>
+      {hamburgerOpen ? "Hello" : ""}
       <div className={styles.header__content}>
         <Link className={styles.header__logo} href="/">
           Nancy Hodnefield
         </Link>
+        <Hamburger
+          hamburgerOpen={hamburgerOpen}
+          setHamburgerOpen={setHamburgerOpen}
+        />
         <Nav />
         <SocialIcons />
       </div>

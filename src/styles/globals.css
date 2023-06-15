@@ -255,6 +255,11 @@ ul {
   justify-content: center;
   gap: 1rem;
 }
+@media screen and (max-width: 768px) {
+  .social-icons__wrapper {
+    display: none;
+  }
+}
 .social-icon__wrapper {
   display: flex;
   align-items: center;

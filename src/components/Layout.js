@@ -3,8 +3,9 @@ import Header from "./Header/Header";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import Footer from "./Footer/Footer";
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
-
+import { useState } from "react";
 export default function Layout({ children }) {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
   return (
     <>
       <Head>
@@ -13,8 +14,16 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header />
-      <main className={`${pjs.className}`}>{children}</main>
+      <Header
+        hamburgerOpen={hamburgerOpen}
+        setHamburgerOpen={setHamburgerOpen}
+      />
+      <main
+        onClick={() => setHamburgerOpen(false)}
+        className={`${pjs.className}`}
+      >
+        {children}
+      </main>
       <Footer />
     </>
   );
