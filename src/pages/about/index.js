@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "@/styles/Coaching.module.css";
 import Link from "next/link";
 // Images
 import speakingImage from "../../../public/assets/images/stage-speaking.png";

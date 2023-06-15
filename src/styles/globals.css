@@ -41,6 +41,9 @@ ul {
 .thin {
   font-weight: 300;
 }
+.medium {
+  font-weight: 500;
+}
 .bold {
   font-weight: 700;
 }
@@ -111,6 +114,11 @@ ul {
   color: var(--white);
   background-color: var(--primary);
 }
+.btn--outline {
+  color: var(--primary);
+  background-color: var(--white);
+  border: 1px solid var(--primary);
+}
 .btn--xl {
   width: 14rem;
 }
@@ -163,12 +171,22 @@ ul {
   position: relative;
   right: 8rem;
 }
+.section-card--bare {
+  box-shadow: none;
+}
 .section-card--glass {
   background-color: var(--glass);
 }
 .section-card--white {
   background-color: var(--white);
   color: var(--dark);
+}
+.section-card__h4 {
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 .section-card__text {
   font-size: 1.125rem;
@@ -179,6 +197,17 @@ ul {
 }
 .section-card__text-mglg {
   margin-bottom: 1.5rem;
+}
+.section-card__text-mgxl {
+  margin-bottom: 2rem;
+}
+.section-card__ul-wrapper {
+  padding-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.section-card__ul {
+  list-style: circle;
+  padding-left: 2rem;
 }
 
 .section-card__ol {
@@ -206,7 +235,7 @@ ul {
   border-radius: 0.5rem;
   flex: 3 1 0;
   width: 0;
-  height: 40rem;
+  aspect-ratio: 9 / 16;
 }
 .section-cta__wrapper {
   display: flex;
@@ -499,6 +528,9 @@ ul {
   width: 100%;
   max-width: 46rem;
   color: var(--white);
+}
+.banner-content--centered {
+  align-items: center;
 }
 .banner__title {
   font-weight: 500;
