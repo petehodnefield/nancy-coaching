@@ -34,6 +34,8 @@ const Header = ({
       </div>
       {hamburgerOpen ? (
         <HamburgerMenu
+          setNavSelected={setNavSelected}
+          navSelected={navSelected}
           hamburgerOpen={hamburgerOpen}
           setHamburgerOpen={setHamburgerOpen}
         />
