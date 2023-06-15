@@ -41,6 +41,9 @@ ul {
 .thin {
   font-weight: 300;
 }
+.bold {
+  font-weight: 700;
+}
 /* Border Radius */
 .rounded {
   border-radius: 0.5rem;
@@ -53,6 +56,9 @@ ul {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+.flip-horizontally {
+  transform: scaleX(-1);
 }
 /* Titles styling */
 .title {
@@ -74,6 +80,10 @@ ul {
   font-weight: 400;
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
+  max-width: 660px;
+}
+.title--xtra-mg {
+  margin-bottom: 2rem;
 }
 .title--xsm {
   font-weight: 400;
@@ -119,11 +129,18 @@ ul {
   background-color: var(--primary);
   color: var(--white);
 }
+.section__continer--xtra-padding {
+  padding: 3rem 0;
+}
 .section-card__wrapper {
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 70rem;
+}
+.section-card__wrapper--relative {
+  position: relative;
+  left: 6rem;
 }
 .section-card__wrapper--row {
   flex-direction: row;
@@ -138,11 +155,20 @@ ul {
   box-shadow: var(--bs1);
   width: fit-content;
 }
+.section-card--xl {
+  flex: 3 1 0;
+  width: 0;
+}
+.section-card--relative {
+  position: relative;
+  right: 8rem;
+}
 .section-card--glass {
   background-color: var(--glass);
 }
 .section-card--white {
   background-color: var(--white);
+  color: var(--dark);
 }
 .section-card__text {
   font-size: 1.125rem;
@@ -153,6 +179,15 @@ ul {
 }
 .section-card__text-mglg {
   margin-bottom: 1.5rem;
+}
+
+.section-card__ol {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 2rem;
+  gap: 0.25rem;
 }
 
 .section__bg-img {
@@ -167,7 +202,12 @@ ul {
 .section__bg-img--filter {
   filter: brightness(30%) blur(1px);
 }
-
+.section__within-img {
+  border-radius: 0.5rem;
+  flex: 3 1 0;
+  width: 0;
+  height: 40rem;
+}
 .section-cta__wrapper {
   display: flex;
   align-items: center;
