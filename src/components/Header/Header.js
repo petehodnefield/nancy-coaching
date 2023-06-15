@@ -7,11 +7,11 @@ const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 import styles from "@/styles/Header.module.css";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import Hamburger from "../Hamburger/Hamburger";
+import HamburgerMenu from "../Hamburger/HamburgerMenu";
 
 const Header = ({ hamburgerOpen, setHamburgerOpen }) => {
   return (
     <header className={`${pjs.className} ${styles.header}`}>
-      {hamburgerOpen ? "Hello" : ""}
       <div className={styles.header__content}>
         <Link className={styles.header__logo} href="/">
           Nancy Hodnefield
@@ -23,6 +23,14 @@ const Header = ({ hamburgerOpen, setHamburgerOpen }) => {
         <Nav />
         <SocialIcons />
       </div>
+      {hamburgerOpen ? (
+        <HamburgerMenu
+          hamburgerOpen={hamburgerOpen}
+          setHamburgerOpen={setHamburgerOpen}
+        />
+      ) : (
+        ""
+      )}
     </header>
   );
 };
