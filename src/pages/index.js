@@ -29,7 +29,7 @@ export default function Home() {
             <Image
               className={styles.signature}
               src={signature}
-              alt="Nancy Hodnefield's signature"
+              alt="Nancy Hodnefield&lsquo;s signature"
             />
             <h1 className="title title--lg">
               Elevate Your Career <br /> with Confidence
@@ -58,18 +58,19 @@ export default function Home() {
           <div
             className={`section-card section-card--white rounded ${styles.about__card}`}
           >
-            <h2 className=" title title--md">Hi, I'm Nancy</h2>
+            <h2 className=" title title--md">Hi, I&lsquo;m Nancy</h2>
             <p className="section-card__text section-card__text-mgsm">
-              Welcome! I'm, a professional coach based in the beautiful state of
-              Minnesota. With a background in human resources and a passion for
-              empowering young female professionals, I am dedicated to helping
-              you unlock your full potential and achieve your career goals.
+              Welcome! I&lsquo;m, a professional coach based in the beautiful
+              state of Minnesota. With a background in human resources and a
+              passion for empowering young female professionals, I am dedicated
+              to helping you unlock your full potential and achieve your career
+              goals.
             </p>
             <p className="section-card__text section-card__text-mglg">
               I bring a deep understanding of organizational dynamics, workplace
-              challenges, and effective strategies for career advancement. I'll
-              share valuable insights and practical tools to navigate the
-              corporate landscape with confidence and authenticity.
+              challenges, and effective strategies for career advancement.
+              I&lsquo;ll share valuable insights and practical tools to navigate
+              the corporate landscape with confidence and authenticity.
             </p>
             <Link href={""}>
               <BtnPrimary btnText={"My Story"} />
@@ -92,11 +93,12 @@ export default function Home() {
               />
             </div>
             <p className="testimonial__text">
-              "Working with Nancy Hodnefield has been an absolute game-changer!
-              Her insightful guidance and unwavering support have empowered me
-              to overcome my fears and achieve remarkable personal growth.
-              Nancy's coaching has truly transformed my life, and I couldn't be
-              more grateful for her expertise and dedication."
+              &ldquo;Working with Nancy Hodnefield has been an absolute
+              game-changer! Her insightful guidance and unwavering support have
+              empowered me to overcome my fears and achieve remarkable personal
+              growth. Nancy&lsquo;s coaching has truly transformed my life, and
+              I couldn&lsquo;t be more grateful for her expertise and
+              dedication.&ldquo;
             </p>
             <p className="testimonial__name">~ Sarah Thompson</p>
           </div>

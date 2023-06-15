@@ -16,9 +16,9 @@ const Footer = ({ navSelected, setNavSelected }) => {
       <div className="footer__columns-wrapper">
         {/* Column 1 */}
         <div className="footer__column footer__column--lg">
-          <a className="title title--sm" href="/">
+          <Link className="title title--sm" href="/">
             <h2 className="footer__title">Nancy Hodnefield</h2>
-          </a>
+          </Link>
           <p className="footer__copyright">
             ©{currentYear} Nancy Hodnefield Coaching LLC.
           </p>

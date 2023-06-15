@@ -16,14 +16,14 @@ const index = () => {
           <h2 className="title--lg banner__title">Contact</h2>
           <p className="banner__text">
             Thank you for your interest in our professional coaching services!
-            We're here to help you unleash your full potential and achieve your
-            goals.
+            We&lsquo;re here to help you unleash your full potential and achieve
+            your goals.
           </p>
           <p className="banner__text">
             If you have any questions, inquiries, or would like to explore how
-            we can work together, please don't hesitate to reach out. Simply
-            fill out the form below, and we'll get back to you as soon as
-            possible.
+            we can work together, please don&lsquo;t hesitate to reach out.
+            Simply fill out the form below, and we&lsquo;ll get back to you as
+            soon as possible.
           </p>
         </div>
       </div>
