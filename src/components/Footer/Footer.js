@@ -4,7 +4,7 @@ import Link from "next/link";
 import SocialIconsFooter from "../SocialIcons/SocialIconsFooter";
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 import { Icon } from "@iconify/react";
-const Footer = () => {
+const Footer = ({ navSelected, setNavSelected }) => {
   const currentYear = new Date().getFullYear();
 
   const handleFooterFormSubmit = (e) => {
@@ -23,10 +23,18 @@ const Footer = () => {
             ©{currentYear} Nancy Hodnefield Coaching LLC.
           </p>
           <div className="footer__terms-wrapper">
-            <Link className="footer__link--sm" href={""}>
+            <Link
+              onClick={() => setNavSelected("Terms of Use")}
+              className="footer__link--sm"
+              href={""}
+            >
               Terms of Use
             </Link>
-            <Link className="footer__link--sm" href={""}>
+            <Link
+              onClick={() => setNavSelected("Privacy Policy")}
+              className="footer__link--sm"
+              href={""}
+            >
               Privacy Policy
             </Link>
           </div>
@@ -36,22 +44,38 @@ const Footer = () => {
           <h3 className="footer__subtitle">Quick Links</h3>
           <ul className="footer__ul">
             <li className="footer__li">
-              <Link className="footer__link" href={"/"}>
+              <Link
+                onClick={() => setNavSelected("")}
+                className="footer__link"
+                href={"/"}
+              >
                 Home
               </Link>
             </li>
             <li className="footer__li">
-              <Link className="footer__link" href={"/about"}>
+              <Link
+                onClick={() => setNavSelected("About")}
+                className="footer__link"
+                href={"/about"}
+              >
                 About
               </Link>
             </li>
             <li className="footer__li">
-              <Link className="footer__link" href={"/coaching"}>
+              <Link
+                onClick={() => setNavSelected("Coaching")}
+                className="footer__link"
+                href={"/coaching"}
+              >
                 Coaching
               </Link>
             </li>
             <li className="footer__li">
-              <Link className="footer__link" href={"/contact"}>
+              <Link
+                onClick={() => setNavSelected("Contact")}
+                className="footer__link"
+                href={"/contact"}
+              >
                 Contact
               </Link>
             </li>
