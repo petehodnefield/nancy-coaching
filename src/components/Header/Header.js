@@ -9,18 +9,27 @@ import SocialIcons from "../SocialIcons/SocialIcons";
 import Hamburger from "../Hamburger/Hamburger";
 import HamburgerMenu from "../Hamburger/HamburgerMenu";
 
-const Header = ({ hamburgerOpen, setHamburgerOpen }) => {
+const Header = ({
+  hamburgerOpen,
+  setHamburgerOpen,
+  navSelected,
+  setNavSelected,
+}) => {
   return (
     <header className={`${pjs.className} ${styles.header}`}>
       <div className={styles.header__content}>
-        <Link className={styles.header__logo} href="/">
+        <Link
+          onClick={() => setNavSelected("")}
+          className={styles.header__logo}
+          href="/"
+        >
           Nancy Hodnefield
         </Link>
         <Hamburger
           hamburgerOpen={hamburgerOpen}
           setHamburgerOpen={setHamburgerOpen}
         />
-        <Nav />
+        <Nav setNavSelected={setNavSelected} navSelected={navSelected} />
         <SocialIcons />
       </div>
       {hamburgerOpen ? (

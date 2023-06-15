@@ -8,11 +8,13 @@ import Link from "next/link";
 const HamburgerMenu = ({ hamburgerOpen, setHamburgerOpen }) => {
   return (
     <div className={styles.hamburger__menu}>
-      <Icon
-        className={`${styles.hamburger__close} ${styles.hamburger__icon}`}
-        icon="iconamoon:close-bold"
-        onClick={() => setHamburgerOpen(false)}
-      />
+      <div className={styles.hamburger__iconwrapper}>
+        <Icon
+          className={`${styles.hamburger__close} ${styles.hamburger__icon}`}
+          icon="iconamoon:close-bold"
+          onClick={() => setHamburgerOpen(false)}
+        />
+      </div>
       <nav className={styles.hamburger__nav}>
         <ul className={styles.hamburger__ul}>
           <li className={styles.hamburger__li}>

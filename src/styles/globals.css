@@ -37,6 +37,12 @@ a:hover {
 ul {
   list-style: none;
 }
+.nav--selected {
+  font-weight: 600;
+}
+.nav--selected::before {
+  content: "•";
+}
 /* Font weight and style */
 .thin {
   font-weight: 300;
