@@ -21,7 +21,7 @@ export default function Home() {
       <section className={`${styles.hero__wrapper} section__container`}>
         <Image
           className={`${styles.hero__image} section__bg-img`}
-          alt="Nancy Hodnefield sitting in her office full of plants smiling at the camera."
+          alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
           src={heroImage}
         />
         <div className={`section-card__wrapper ${styles.section__wrapper}`}>
@@ -29,7 +29,7 @@ export default function Home() {
             <Image
               className={styles.signature}
               src={signature}
-              alt="Nancy Hodnefield&lsquo;s signature"
+              alt="Nancy Johnson&lsquo;s signature"
             />
             <h1 className="title title--lg">
               Elevate Your Career <br /> with Confidence
@@ -52,7 +52,7 @@ export default function Home() {
           {" "}
           <Image
             src={aboutImage}
-            alt="Nancy Hodnefield wearing a sweater smiling."
+            alt="Nancy Johnson wearing a sweater smiling."
             className={`cover rounded ${styles.about__img}`}
           />
           <div
@@ -93,7 +93,7 @@ export default function Home() {
               />
             </div>
             <p className="testimonial__text">
-              &ldquo;Working with Nancy Hodnefield has been an absolute
+              &ldquo;Working with Nancy Johnson has been an absolute
               game-changer! Her insightful guidance and unwavering support have
               empowered me to overcome my fears and achieve remarkable personal
               growth. Nancy&lsquo;s coaching has truly transformed my life, and
@@ -171,7 +171,7 @@ export default function Home() {
         <Image
           className={`${styles.hero__image} section__bg-img section__bg-img--filter`}
           src={heroImage}
-          alt="Nancy Hodnefield sitting in her office full of plants smiling at the camera."
+          alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
         />
         <div className="section-cta__wrapper">
           <div className="section-cta">

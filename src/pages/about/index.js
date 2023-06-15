@@ -15,7 +15,7 @@ const index = () => {
         <Image
           className="cover section__bg-img"
           src={speakingImage}
-          alt="Nancy Hodnefield sitting in her office full of plants smiling."
+          alt="Nancy Johnson sitting in her office full of plants smiling."
         />
         <div className="section-card__wrapper">
           <div className="section-card section-card--white  rounded-lg">
@@ -138,7 +138,7 @@ const index = () => {
       <section className="section__container">
         <Image
           src={smilingImage}
-          alt="Nancy Hodnefield smiling at the camera."
+          alt="Nancy Johnson smiling at the camera."
           className="cover section__bg-img section__bg-img--filter"
         />
         <div className="section-cta__wrapper">

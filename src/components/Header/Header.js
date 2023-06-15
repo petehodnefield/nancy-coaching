@@ -23,7 +23,7 @@ const Header = ({
           className={styles.header__logo}
           href="/"
         >
-          Nancy Hodnefield
+          Nancy Johnson
         </Link>
         <Hamburger
           hamburgerOpen={hamburgerOpen}

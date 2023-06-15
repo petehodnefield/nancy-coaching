@@ -24,7 +24,7 @@ const index = () => {
         <Image
           className="banner__img cover"
           src={heroImage}
-          alt="Nancy Hodnefield sitting in her office full of plants smiling at the camera."
+          alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
         />
         <div className="banner-content banner-content--centered">
           <h2 className="title--lg banner__title">Work With Us</h2>
