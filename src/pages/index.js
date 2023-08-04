@@ -18,33 +18,37 @@ import transformImage from "../../public/assets/images/transform.jpg";
 export default function Home() {
   return (
     <main className={`${styles.main} `}>
-      <section className={`${styles.hero__wrapper} section__container`}>
-        <Image
-          className={`${styles.hero__image} section__bg-img`}
-          alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
-          src={heroImage}
-        />
-        <div className={`section-card__wrapper ${styles.section__wrapper}`}>
-          <div className="section-card section-card--glass rounded">
-            <Image
-              className={styles.signature}
-              src={signature}
-              alt="Nancy Johnson&lsquo;s signature"
-            />
-            <h1 className="title title--lg">
-              Elevate Your Career <br /> with Confidence
-            </h1>
-            <h2 className="title--sm">
-              Guiding Ambitious Young Women to Success
-            </h2>
-            <Link href={"/"}>
-              <BtnPrimaryXl
-                btnText={"Ignite Your Potential Now"}
-              ></BtnPrimaryXl>
-            </Link>{" "}
+      <div className={styles.wrapper}>
+        <section className={`${styles.hero__wrapper} section__container`}>
+          <Image
+            className={`${styles.hero__image} ${styles.background} section__bg-img`}
+            alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
+            src={heroImage}
+          />
+          <div
+            className={`section-card__wrapper ${styles.section__wrapper} ${styles.foreground}`}
+          >
+            <div className="section-card section-card--glass rounded">
+              <Image
+                className={styles.signature}
+                src={signature}
+                alt="Nancy Johnson&lsquo;s signature"
+              />
+              <h1 className="title title--lg">
+                Elevate Your Career <br /> with Confidence
+              </h1>
+              <h2 className="title--sm">
+                Guiding Ambitious Young Women to Success
+              </h2>
+              <Link href={"#test"}>
+                <BtnPrimaryXl
+                  btnText={"Ignite Your Potential Now"}
+                ></BtnPrimaryXl>
+              </Link>{" "}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* About section */}
       <section className="section__container">
