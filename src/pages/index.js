@@ -20,11 +20,11 @@ export default function Home() {
     <main className={`${styles.main} `}>
       <div className={styles.wrapper}>
         <section className={`${styles.hero__wrapper} section__container`}>
-          <Image
+          {/* <Image
             className={`${styles.hero__image} ${styles.background} section__bg-img`}
             alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
             src={heroImage}
-          />
+          /> */}
           <div
             className={`section-card__wrapper ${styles.section__wrapper} ${styles.foreground}`}
           >
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
 
       {/* About section */}
-      <section className="section__container">
+      {/* <section className="section__container">
         <div className={`section-card__wrapper ${styles.aboutcard__wrapper}`}>
           {" "}
           <Image
@@ -81,10 +81,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials */}
-      <section className="section__container section__container--centered section__container--primary">
+      {/* <section className="section__container section__container--centered section__container--primary">
         <div className="section-card__wrapper section-card__wrapper--column">
           <h2 className="title title--uppercase">Testimonials</h2>
           <h3 className="title title--lg">Hear From Our Students</h3>
@@ -107,16 +107,14 @@ export default function Home() {
             <p className="testimonial__name">~ Sarah Thompson</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Growth Solutions Section */}
-      <section className="section__container section__container--centered">
+      {/* <section className="section__container section__container--centered">
         <div className="section-card__wrapper section-card__wrapper--column">
           <h2 className="title title--uppercase">Growth Solutions</h2>
           <h3 className="title title--lg">Elevate Your Career</h3>
-          {/* Solution cards */}
           <div className="growth-cards__wrapper">
-            {/* Solution 1 */}
             <Link href={""}>
               <div className="growth-card__wrapper">
                 <Image
@@ -132,7 +130,6 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-            {/* Solution 2 */}
             <Link href={""}>
               <div className="growth-card__wrapper">
                 <Image
@@ -150,7 +147,6 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-            {/* Solution 3 */}
             <Link href={""}>
               <div className="growth-card__wrapper">
                 <Image
@@ -168,10 +164,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
-      <section className="section__container">
+      {/* <section className="section__container">
         <Image
           className={`${styles.hero__image} section__bg-img section__bg-img--filter`}
           src={heroImage}
@@ -191,7 +187,6 @@ export default function Home() {
             >
               <input type="hidden" name="u" value="f388accd24cd6540958e58484" />
               <input type="hidden" name="id" value="477bd3de93" />
-              {/* Name input */}
               <div className="form__label-input-wrapper">
                 <label className="form__label" htmlFor="name">
                   Name
@@ -203,7 +198,6 @@ export default function Home() {
                   name="MERGE1"
                 />
               </div>
-              {/* Email input */}
               <div className="form__label-input-wrapper form__label-input-wrapper--last ">
                 <label className="form__label" htmlFor="email">
                   Email Address
@@ -219,7 +213,7 @@ export default function Home() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

@@ -2,10 +2,19 @@
   width: 10rem;
   height: 100%;
 }
-
-.section__wrapper {
-  padding-left: 6rem;
+.main {
+  width: 100%;
 }
+.wrapper {
+  /* padding: 0 1.5rem; */
+  background-image: url(../../public/assets/images/hero-image.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+/* .section__wrapper {
+  padding-left: 6rem;
+} */
 .about__img {
   width: 32rem;
   aspect-ratio: 1 / 1;
@@ -17,4 +26,8 @@
 .about__card {
   position: relative;
   right: 6rem;
+}
+
+.hero__wrapper {
+  padding: 0 1.5rem;
 }

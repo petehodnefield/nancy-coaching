@@ -19,7 +19,7 @@ const Footer = ({ navSelected, setNavSelected }) => {
           <Link className="title title--sm" href="/">
             <h2 className="footer__title">Nancy Johnson</h2>
           </Link>
-          <p className="footer__copyright">
+          <p className="footer__copyright footer__copyright--md-screen">
             ©{currentYear} Nancy Johnson Coaching LLC.
           </p>
           <div className="footer__terms-wrapper">
@@ -40,7 +40,7 @@ const Footer = ({ navSelected, setNavSelected }) => {
           </div>
         </div>
         {/* Column 2 */}
-        <div className="footer__column footer__column--sm">
+        <div className="footer__column footer__column--sm footer__hidden-mobile">
           <h3 className="footer__subtitle">Quick Links</h3>
           <ul className="footer__ul">
             <li className="footer__li">
@@ -117,6 +117,9 @@ const Footer = ({ navSelected, setNavSelected }) => {
           <div></div>
           <h3 className="footer__subtitle">Follow</h3>
           <SocialIconsFooter />
+          <p className="footer__copyright footer__copyright--sm-screen">
+            ©{currentYear} Nancy Johnson Coaching LLC.
+          </p>
         </div>
       </div>
     </footer>
