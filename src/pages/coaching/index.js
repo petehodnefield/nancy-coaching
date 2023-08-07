@@ -20,20 +20,15 @@ const index = () => {
     <main>
       {" "}
       {/* Banner */}
-      <div className="banner">
-        <Image
-          className="banner__img cover"
-          src={heroImage}
-          alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
-        />
+      <div className={`banner ${styles.bannerImg}`}>
         <div className="banner-content banner-content--centered">
           <h2 className="title--lg banner__title">Work With Us</h2>
         </div>
       </div>
       {/* 1 on 1 Coaching */}
-      <section className="section__container section__continer--xtra-padding">
-        <div className="section-card__wrapper">
-          <div className="section-card section-card--bare">
+      <section className="section__container ">
+        <div className={` section-card__wrapper ${styles.coachingImgSection}`}>
+          <div className="section-card ">
             <h2 className="title title--uppercase">1 on 1 Coaching</h2>
             <h3 className="title title--lg">
               Personalized Guidance for Young <br /> Female Professionals
@@ -68,14 +63,16 @@ const index = () => {
           <Image
             src={twoprosImage}
             alt="A young professional wearing a business suit"
-            className={`cover section__within-img ${styles.professional}`}
+            className={`cover  ${styles.professional} rounded`}
           />
         </div>
       </section>
       {/* Career Transition Coaching  */}
-      <section className="section__container section__container--primary section__continer--xtra-padding">
-        <div className="section-card__wrapper">
-          <div className="section-card section-card--white rounded-lg">
+      <section className="section__container section__container--primary ">
+        <div className={`section-card__wrapper ${styles.coachingImgSection}`}>
+          <div
+            className={`section-card section-card--white rounded-lg ${styles.sectionCardOrder2}`}
+          >
             <h2 className="title title--uppercase">
               Career Transition Coaching
             </h2>
@@ -113,25 +110,24 @@ const index = () => {
           </div>
           <Image
             src={professionalImage}
-            className={`cover section__within-img ${styles.professional}`}
+            className={`cover ${styles.professional} ${styles.professionalTwo} rounded`}
             alt="A female professional standing in an office holding her hands together."
           />
         </div>
       </section>
       {/* Leadership Development */}
-      <section className="section__container section__continer--xtra-padding">
-        <div className="section-card__wrapper">
+      <section className="section__container">
+        <div className={`section-card__wrapper ${styles.bossSection}`}>
           <Image
             src={bestbossImage}
-            className="cover section__within-img"
+            className={`cover ${styles.bestBossImg} rounded`}
             alt="A woman holding a mug that says: &lsquo;Worl&lsquo;s Best Boss&lsquo;"
           />
-          <div className="section-card section-card--bare rounded-lg">
+          <div className="section-card rounded-lg">
             <h2 className="title title--uppercase">Leadership Development</h2>
             <h3 className="title title--lg">
               Unlock Your Leadership Potential
             </h3>
-            {/* Questions */}
             <h4 className="section-card__h4">Why leadership?</h4>
             <p className="section-card__text section-card__text-mglg">
               Leadership skills are crucial for young female professionals

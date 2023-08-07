@@ -1,3 +1,65 @@
+.bannerImg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../../public/assets/images/hero-image.png);
+}
+.coachingImgSection {
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 1080px) {
+  .coachingImgSection {
+    flex-direction: row;
+  }
+}
 .professional {
-  object-position: -35rem;
+  aspect-ratio: 16/9;
+}
+@media screen and (min-width: 768px) {
+  .professional {
+    max-width: 44rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .professional {
+    aspect-ratio: 9 / 16;
+    max-width: 22rem;
+    object-position: -33rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .professionalTwo {
+    max-width: 24rem;
+    order: 1;
+  }
+  .sectionCardOrder2 {
+    order: 2;
+  }
+}
+.bestBossImg {
+  aspect-ratio: 16/9;
+}
+@media screen and (min-width: 768px) {
+  .bestBossImg {
+    max-width: 44rem;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .bestBossImg {
+    aspect-ratio: 9 / 16;
+    max-width: 26rem;
+    order: 2;
+    transform: scaleX(-1);
+    object-position: -6rem;
+  }
+}
+.bossSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+@media screen and (min-width: 1080px) {
+  .bossSection {
+    flex-direction: row;
+  }
 }
