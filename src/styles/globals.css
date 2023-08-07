@@ -151,6 +151,7 @@ ul {
   justify-content: center;
   align-items: flex-start;
   position: relative;
+  padding: 3rem 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .section__container {

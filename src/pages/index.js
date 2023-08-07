@@ -79,7 +79,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      {/* <section className="section__container section__container--centered section__container--primary">
+      <section className="section__container section__container--centered section__container--primary">
         <div className="section-card__wrapper section-card__wrapper--column">
           <h2 className="title title--uppercase">Testimonials</h2>
           <h3 className="title title--lg">Hear From Our Students</h3>
@@ -102,7 +102,7 @@ export default function Home() {
             <p className="testimonial__name">~ Sarah Thompson</p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Growth Solutions Section */}
       {/* <section className="section__container section__container--centered">
