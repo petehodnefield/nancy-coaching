@@ -128,10 +128,15 @@ ul {
   font-weight: 500;
   border: none;
   height: 3rem;
-  width: 11.25rem;
   cursor: pointer;
   position: relative;
   padding-top: 2px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 11.25rem;
+  }
 }
 .btn--primary {
   color: var(--white);
@@ -278,14 +283,26 @@ ul {
 .section-cta__wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 70rem;
+}
+@media screen and (min-width: 1080px) {
+  .section-cta__wrapper {
+    justify-content: flex-start;
+    padding-left: 6rem;
+  }
 }
 .section-cta {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .section-cta {
+    align-items: flex-start;
+  }
 }
 /* Social Icons style */
 .social-icons__wrapper {
@@ -415,10 +432,23 @@ ul {
   font-weight: 400;
 }
 /* Form Styling */
+#homepageForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  #homepageForm {
+    max-width: 30rem;
+    align-items: flex-start;
+  }
+}
 .form__label-input-wrapper {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .form__label-input-wrapper--last {
   margin-bottom: 2rem;
@@ -442,7 +472,12 @@ ul {
 
 .form__input--lg {
   height: 3rem;
-  width: 20rem;
+  width: 100%;
+}
+@media screen and (min-width: 1080px) {
+  .form__input--lg {
+    width: 20rem;
+  }
 }
 .form__input--sm {
   height: 2rem;

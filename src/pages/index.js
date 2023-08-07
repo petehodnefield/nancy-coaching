@@ -162,12 +162,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      {/* <section className="section__container">
-        <Image
-          className={`${styles.hero__image} section__bg-img section__bg-img--filter`}
-          src={heroImage}
-          alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
-        />
+      <section className={`section__container ${styles.cta}`}>
         <div className="section-cta__wrapper">
           <div className="section-cta">
             <h2 className="title title--xl">Ready to level up your career?</h2>
@@ -208,7 +203,7 @@ export default function Home() {
             </form>
           </div>
         </div>
-      </section> */}
+      </section>
     </main>
   );
 }
