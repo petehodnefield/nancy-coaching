@@ -15,7 +15,6 @@
 @media screen and (min-width: 500px) {
   .header__content {
     padding: 0 4rem;
-    max-width: 100%;
   }
 }
 

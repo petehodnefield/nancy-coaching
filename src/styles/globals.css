@@ -149,9 +149,14 @@ ul {
 .section__container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 600px;
+  align-items: flex-start;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .section__container {
+    align-items: center;
+    min-height: 600px;
+  }
 }
 .section__container--centered {
   text-align: center;
@@ -287,11 +292,14 @@ ul {
   justify-content: center;
   gap: 1rem;
 }
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .social-icons__wrapper {
     display: none;
   }
-} */
+}
+.social-icons__footer {
+  display: flex;
+}
 .social-icon__wrapper {
   display: flex;
   align-items: center;

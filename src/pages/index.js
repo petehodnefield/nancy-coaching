@@ -20,11 +20,6 @@ export default function Home() {
     <main className={`${styles.main} `}>
       <div className={styles.wrapper}>
         <section className={`${styles.hero__wrapper} section__container`}>
-          {/* <Image
-            className={`${styles.hero__image} ${styles.background} section__bg-img`}
-            alt="Nancy Johnson sitting in her office full of plants smiling at the camera."
-            src={heroImage}
-          /> */}
           <div
             className={`section-card__wrapper ${styles.section__wrapper} ${styles.foreground}`}
           >
@@ -51,7 +46,7 @@ export default function Home() {
       </div>
 
       {/* About section */}
-      {/* <section className="section__container">
+      <section className={`section__container ${styles.about__section}`}>
         <div className={`section-card__wrapper ${styles.aboutcard__wrapper}`}>
           {" "}
           <Image
@@ -81,7 +76,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Testimonials */}
       {/* <section className="section__container section__container--centered section__container--primary">

@@ -116,7 +116,7 @@ const Footer = ({ navSelected, setNavSelected }) => {
           </form>
           <div></div>
           <h3 className="footer__subtitle">Follow</h3>
-          <SocialIconsFooter />
+          <SocialIconsFooter extraClassName={"social-icons__footer"} />
           <p className="footer__copyright footer__copyright--sm-screen">
             ©{currentYear} Nancy Johnson Coaching LLC.
           </p>

@@ -2,9 +2,9 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import styles from "@/styles/Header.module.css";
 import Link from "next/link";
-const SocialIconsFooter = () => {
+const SocialIconsFooter = ({ extraClassName }) => {
   return (
-    <div className={`social-icons__wrapper `}>
+    <div className={`social-icons__wrapper ${extraClassName}`}>
       <Link
         href="#"
         className="social-icon__wrapper social-icon__wrapper--white"
