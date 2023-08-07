@@ -474,7 +474,7 @@ ul {
   height: 3rem;
   width: 100%;
 }
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 768px) {
   .form__input--lg {
     width: 20rem;
   }
@@ -502,9 +502,14 @@ ul {
   transition: 300ms ease-in-out;
 }
 .form__text-area {
-  width: 20rem;
   height: 8rem;
   padding-top: 1rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .form__text-area {
+    width: 20rem;
+  }
 }
 /* Footer Styling */
 .footer {
@@ -663,18 +668,14 @@ ul {
 }
 .banner {
   width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../../public/assets/images/hero-image.png);
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
   position: relative;
 }
-.banner__img {
-  position: absolute;
-  z-index: -1;
-  filter: brightness(15%) blur(1px);
-  height: 100%;
-  top: 0;
-}
+
 .banner-content {
   display: flex;
   flex-direction: column;
@@ -701,6 +702,12 @@ ul {
   box-shadow: var(--bs1);
   background-color: var(--white);
   border: 1px solid var(--dark);
-  width: fit-content;
-  padding: 3rem;
+
+  width: 90%;
+  padding: 3rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .contact__form {
+    width: fit-content;
+  }
 }
