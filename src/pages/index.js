@@ -105,7 +105,7 @@ export default function Home() {
       </section>
 
       {/* Growth Solutions Section */}
-      {/* <section className="section__container section__container--centered">
+      <section className="section__container section__container--centered">
         <div className="section-card__wrapper section-card__wrapper--column">
           <h2 className="title title--uppercase">Growth Solutions</h2>
           <h3 className="title title--lg">Elevate Your Career</h3>
@@ -159,7 +159,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       {/* <section className="section__container">

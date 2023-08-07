@@ -351,7 +351,13 @@ ul {
 /* Growth Solutions Cards Styling */
 .growth-cards__wrapper {
   display: flex;
+  flex-direction: column;
   gap: 2rem;
+}
+@media screen and (min-width: 900px) {
+  .growth-cards__wrapper {
+    flex-direction: row;
+  }
 }
 .growth-card__wrapper {
   display: flex;
@@ -379,15 +385,21 @@ ul {
 .growth-card__text-wrapper {
   background-color: var(--glassdark);
   color: var(--white);
-  height: 33%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 1.5rem;
+  height: 10rem;
   text-align: left;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+@media screen and (min-width: 1080px) {
+  .growth-card__text-wrapper {
+    height: 33%;
+    padding: 0 1.5rem;
+  }
 }
 .growth-card__text-wrapper:hover {
   background-color: var(--dark);
