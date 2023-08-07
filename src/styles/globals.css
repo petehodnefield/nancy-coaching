@@ -274,12 +274,7 @@ ul {
 .section__bg-img--filter {
   filter: brightness(30%) blur(1px);
 }
-.section__within-img {
-  border-radius: 0.5rem;
-  flex: 3 1 0;
-  width: 0;
-  aspect-ratio: 9 / 16;
-}
+
 .section-cta__wrapper {
   display: flex;
   align-items: center;

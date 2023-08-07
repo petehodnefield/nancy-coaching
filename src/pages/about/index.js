@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import styles from "@/styles/About.module.css";
 // Images
 import speakingImage from "../../../public/assets/images/stage-speaking.png";
 import tableImage from "../../../public/assets/images/table.png";
@@ -11,12 +12,7 @@ const index = () => {
   return (
     <main className="coaching">
       {/* Hero section */}
-      <section className="section__container section__continer--xtra-padding">
-        <Image
-          className="cover section__bg-img"
-          src={speakingImage}
-          alt="Nancy Johnson sitting in her office full of plants smiling."
-        />
+      <section className={`section__container ${styles.heroImg}`}>
         <div className="section-card__wrapper">
           <div className="section-card section-card--white  rounded-lg">
             <h2 className="title title--uppercase">Welcome!</h2>
@@ -53,14 +49,14 @@ const index = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="section__container section__continer--xtra-padding">
-        <div className="section-card__wrapper section-card__wrapper--relative">
+      <section className="section__container ">
+        <div className={`section-card__wrapper ${styles.relativeSection}`}>
           <Image
-            className="cover flip-horizontally section__within-img"
+            className={`cover flip-horizontally ${styles.section__withinImg}`}
             src={tableImage}
             alt="Nancy sitting at a kitchen table smiling at the camera."
           />
-          <div className="section-card section-card--relative section-card--white section-card--xl rounded-lg">
+          <div className="section-card  section-card--white rounded-lg">
             <h2 className="title title--uppercase">Our Approach</h2>
             <h3 className="title title--lg">
               Holistic Coaching for <br /> Lasting Transformation
@@ -94,7 +90,7 @@ const index = () => {
       </section>
 
       {/* What to Expect Section */}
-      <section className="section__container section__container--centered section__container--primary section__continer--xtra-padding">
+      <section className="section__container section__container--centered section__container--primary ">
         <div className="section-card__wrapper section-card__wrapper--column">
           <div className="section-card section-card--white rounded-lg">
             <h2 className="title title--uppercase">What to Expect</h2>
@@ -135,12 +131,7 @@ const index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="section__container">
-        <Image
-          src={smilingImage}
-          alt="Nancy Johnson smiling at the camera."
-          className="cover section__bg-img section__bg-img--filter"
-        />
+      <section className={`section__container ${styles.aboutCTA}`}>
         <div className="section-cta__wrapper">
           <div className="section-cta">
             <h2 className="title title--uppercase">Let&lsquo;s get started</h2>
@@ -152,7 +143,7 @@ const index = () => {
               will empower you to reach new heights in your personal and
               professional life?{" "}
             </h4>
-            <Link href="/contact">
+            <Link className="btn" href="/contact">
               <BtnPrimary btnText={"Reach out"} btnType={"text"} />
             </Link>
           </div>
