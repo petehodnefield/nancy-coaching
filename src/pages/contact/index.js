@@ -2,7 +2,21 @@ import BtnPrimary from "@/components/Buttons/BtnPrimary";
 import Image from "next/image";
 import React from "react";
 import heroImage from "../../../public/assets/images/hero-image.png";
+import { useState } from "react";
 const index = () => {
+  const [formContent, setFormContent] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  console.log(formContent);
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    window.alert(
+      "Thank you for contacting us! We will reply as soon as we can."
+    );
+  };
   return (
     <main className="contact">
       {/* Banner */}
@@ -24,12 +38,19 @@ const index = () => {
       </div>
 
       {/* Contact form */}
-      <form id="contactFormMain" className="contact__form">
+      <form
+        id="contactFormMain"
+        className="contact__form"
+        onSubmit={(e) => handleFormSubmit(e)}
+      >
         <div className="form__label-input-wrapper">
           <label htmlFor="name" className="form__label">
             Name
           </label>
           <input
+            onChange={(e) =>
+              setFormContent({ ...formContent, name: e.target.value })
+            }
             type="name"
             name="name"
             id="name"
@@ -42,6 +63,9 @@ const index = () => {
             Email Address
           </label>
           <input
+            onChange={(e) =>
+              setFormContent({ ...formContent, email: e.target.value })
+            }
             type="email"
             name="email"
             id="email"
@@ -54,6 +78,9 @@ const index = () => {
             Message{" "}
           </label>
           <textarea
+            onChange={(e) =>
+              setFormContent({ ...formContent, message: e.target.value })
+            }
             maxLength={"200"}
             name="message"
             id="message"

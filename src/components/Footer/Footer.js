@@ -16,7 +16,11 @@ const Footer = ({ navSelected, setNavSelected }) => {
       <div className="footer__columns-wrapper">
         {/* Column 1 */}
         <div className="footer__column footer__column--lg">
-          <Link className="title title--sm" href="/">
+          <Link
+            className="title title--sm"
+            href="/"
+            onClick={() => setNavSelected("")}
+          >
             <h2 className="footer__title">Nancy Johnson</h2>
           </Link>
           <p className="footer__copyright footer__copyright--md-screen">
@@ -24,14 +28,14 @@ const Footer = ({ navSelected, setNavSelected }) => {
           </p>
           <div className="footer__terms-wrapper">
             <Link
-              onClick={() => setNavSelected("Terms of Use")}
+              onClick={() => setNavSelected("")}
               className="footer__link--sm"
               href={""}
             >
               Terms of Use
             </Link>
             <Link
-              onClick={() => setNavSelected("Privacy Policy")}
+              onClick={() => setNavSelected("")}
               className="footer__link--sm"
               href={""}
             >
@@ -54,7 +58,7 @@ const Footer = ({ navSelected, setNavSelected }) => {
             </li>
             <li className="footer__li">
               <Link
-                onClick={() => setNavSelected("About")}
+                onClick={() => setNavSelected("about")}
                 className="footer__link"
                 href={"/about"}
               >
@@ -63,7 +67,7 @@ const Footer = ({ navSelected, setNavSelected }) => {
             </li>
             <li className="footer__li">
               <Link
-                onClick={() => setNavSelected("Coaching")}
+                onClick={() => setNavSelected("coaching")}
                 className="footer__link"
                 href={"/coaching"}
               >
@@ -72,7 +76,7 @@ const Footer = ({ navSelected, setNavSelected }) => {
             </li>
             <li className="footer__li">
               <Link
-                onClick={() => setNavSelected("Contact")}
+                onClick={() => setNavSelected("contact")}
                 className="footer__link"
                 href={"/contact"}
               >
@@ -91,7 +95,11 @@ const Footer = ({ navSelected, setNavSelected }) => {
             className="footer__form"
             id="footerForm"
           >
-            <input type="hidden" name="_next" value="https://mongamonga.com" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://nancy-coaching.vercel.app/"
+            />
             <label
               htmlFor="signUp"
               className="thin footer__text form__label--thin"

@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { useContext } from "react";
+import { NavContext } from "../_app";
 // Style import
 import styles from "@/styles/Coaching.module.css";
 
@@ -16,6 +17,7 @@ import BtnOutline from "@/components/Buttons/BtnOutline";
 import BtnPrimary from "@/components/Buttons/BtnPrimary";
 
 const index = () => {
+  const [navSelected, setNavSelected] = useContext(NavContext);
   return (
     <main>
       {" "}
@@ -104,7 +106,7 @@ const index = () => {
               embark on a fulfilling and rewarding new chapter in your
               professional life.
             </p>
-            <Link href={"#"}>
+            <Link href={"/contact"} onClick={() => setNavSelected("contact")}>
               <BtnOutline btnText={"Embrace change"} btnType={"text"} />
             </Link>
           </div>
@@ -153,7 +155,7 @@ const index = () => {
               develop a leadership development plan that aligns with your career
               goals and supports your long-term growth.
             </p>
-            <Link href={"#"}>
+            <Link href={"/contact"} onClick={() => setNavSelected("contact")}>
               <BtnPrimary btnText={"Unlock your potential"} btnType={"text"} />
             </Link>
           </div>

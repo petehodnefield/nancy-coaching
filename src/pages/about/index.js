@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import styles from "@/styles/About.module.css";
+import { NavContext } from "../_app";
+import { useContext } from "react";
 // Images
 import speakingImage from "../../../public/assets/images/stage-speaking.png";
 import tableImage from "../../../public/assets/images/table.png";
@@ -9,6 +11,7 @@ import Image from "next/image";
 import BtnPrimary from "@/components/Buttons/BtnPrimary";
 
 const index = () => {
+  const [navSelected, setNavSelected] = useContext(NavContext);
   return (
     <main className="coaching">
       {/* Hero section */}
@@ -143,7 +146,11 @@ const index = () => {
               will empower you to reach new heights in your personal and
               professional life?{" "}
             </h4>
-            <Link className="btn" href="/contact">
+            <Link
+              className="btn"
+              href="/contact"
+              onClick={() => setNavSelected("contact")}
+            >
               <BtnPrimary btnText={"Reach out"} btnType={"text"} />
             </Link>
           </div>

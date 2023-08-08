@@ -2,13 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import Link from "next/link";
+import { useContext } from "react";
+import { NavContext } from "./_app";
 // Components
 import signature from "../../public/assets/images/signature.png";
 import BtnPrimaryXl from "@/components/Buttons/BtnPrimaryXl";
 import BtnPrimary from "@/components/Buttons/BtnPrimary";
 
 // Images
-import heroImage from "../../public/assets/images/hero-image.png";
 import aboutImage from "../../public/assets/images/about.png";
 import testimonialImage from "../../public/assets/images/testimonial-image.png";
 import bossImage from "../../public/assets/images/leadership.jpg";
@@ -16,6 +17,7 @@ import blueprintImage from "../../public/assets/images/career-success.jpg";
 import transformImage from "../../public/assets/images/transform.jpg";
 
 export default function Home() {
+  const [navSelected, setNavSelected] = useContext(NavContext);
   return (
     <main className={`${styles.main} `}>
       <div className={styles.wrapper}>
@@ -35,7 +37,7 @@ export default function Home() {
               <h2 className="title--sm">
                 Guiding Ambitious Young Women to Success
               </h2>
-              <Link href={"#test"}>
+              <Link href={"/contact"} onClick={() => setNavSelected("contact")}>
                 <BtnPrimaryXl
                   btnText={"Ignite Your Potential Now"}
                 ></BtnPrimaryXl>
@@ -71,7 +73,7 @@ export default function Home() {
               I&lsquo;ll share valuable insights and practical tools to navigate
               the corporate landscape with confidence and authenticity.
             </p>
-            <Link href={""}>
+            <Link href={"/about"} onClick={() => setNavSelected("about")}>
               <BtnPrimary btnText={"My Story"} />
             </Link>
           </div>
@@ -110,7 +112,7 @@ export default function Home() {
           <h2 className="title title--uppercase">Growth Solutions</h2>
           <h3 className="title title--lg">Elevate Your Career</h3>
           <div className="growth-cards__wrapper">
-            <Link href={""}>
+            <Link href={"/coaching"} onClick={() => setNavSelected("coaching")}>
               <div className="growth-card__wrapper">
                 <Image
                   src={bossImage}
@@ -125,7 +127,7 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-            <Link href={""}>
+            <Link href={"/coaching"} onClick={() => setNavSelected("coaching")}>
               <div className="growth-card__wrapper">
                 <Image
                   src={blueprintImage}
@@ -142,7 +144,7 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-            <Link href={""}>
+            <Link href={"/coaching"} onClick={() => setNavSelected("coaching")}>
               <div className="growth-card__wrapper">
                 <Image
                   src={transformImage}

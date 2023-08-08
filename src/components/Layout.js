@@ -3,10 +3,11 @@ import Header from "./Header/Header";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import Footer from "./Footer/Footer";
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { NavContext } from "../pages/_app";
 export default function Layout({ children }) {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const [navSelected, setNavSelected] = useState("");
+  const [navSelected, setNavSelected] = useContext(NavContext);
   return (
     <>
       <Head>

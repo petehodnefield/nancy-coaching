@@ -38,11 +38,11 @@ const HamburgerMenu = ({
             <Link
               onClick={() => {
                 setHamburgerOpen(false);
-                setNavSelected("About");
+                setNavSelected("about");
               }}
               href={"/about"}
               className={`${styles.hamburger__link}  ${
-                navSelected === "About" ? "nav--selected" : ""
+                navSelected === "about" ? "nav--selected" : ""
               }`}
             >
               About
@@ -52,11 +52,11 @@ const HamburgerMenu = ({
             <Link
               onClick={() => {
                 setHamburgerOpen(false);
-                setNavSelected("Coaching");
+                setNavSelected("coaching");
               }}
               href={"/coaching"}
               className={`${styles.hamburger__link}  ${
-                navSelected === "Coaching" ? "nav--selected" : ""
+                navSelected === "coaching" ? "nav--selected" : ""
               }`}
             >
               Coaching
@@ -66,11 +66,11 @@ const HamburgerMenu = ({
             <Link
               onClick={() => {
                 setHamburgerOpen(false);
-                setNavSelected("Contact");
+                setNavSelected("contact");
               }}
               href={"/contact"}
               className={`${styles.hamburger__link}  ${
-                navSelected === "Contact" ? "nav--selected" : ""
+                navSelected === "contact" ? "nav--selected" : ""
               }`}
             >
               Contact

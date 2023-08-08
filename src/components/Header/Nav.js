@@ -19,9 +19,9 @@ const Nav = ({ setNavSelected, navSelected }) => {
         </li>
         <li className="nav__li">
           <Link
-            onClick={() => setNavSelected("About")}
+            onClick={() => setNavSelected("about")}
             className={`${styles.nav__link}  ${
-              navSelected === "About" ? "nav--selected" : ""
+              navSelected === "about" ? "nav--selected" : ""
             }`}
             href={"/about"}
           >
@@ -30,9 +30,9 @@ const Nav = ({ setNavSelected, navSelected }) => {
         </li>
         <li className="nav__li">
           <Link
-            onClick={() => setNavSelected("Coaching")}
+            onClick={() => setNavSelected("coaching")}
             className={`${styles.nav__link}  ${
-              navSelected === "Coaching" ? "nav--selected" : ""
+              navSelected === "coaching" ? "nav--selected" : ""
             }`}
             href={"/coaching"}
           >
@@ -41,9 +41,9 @@ const Nav = ({ setNavSelected, navSelected }) => {
         </li>
         <li className="nav__li">
           <Link
-            onClick={() => setNavSelected("Contact")}
+            onClick={() => setNavSelected("contact")}
             className={`${styles.nav__link}  ${
-              navSelected === "Contact" ? "nav--selected" : ""
+              navSelected === "contact" ? "nav--selected" : ""
             }`}
             href={"/contact"}
           >
