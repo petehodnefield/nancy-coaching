@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import heroImage from "../../../public/assets/images/hero-image.png";
 import { useState } from "react";
-const index = () => {
+const Contact = () => {
   const [formContent, setFormContent] = useState({
     name: "",
     email: "",
@@ -94,4 +94,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Contact;

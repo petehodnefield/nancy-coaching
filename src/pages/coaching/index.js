@@ -16,7 +16,7 @@ import bestbossImage from "../../../public/assets/images/best-boss.jpg";
 import BtnOutline from "@/components/Buttons/BtnOutline";
 import BtnPrimary from "@/components/Buttons/BtnPrimary";
 
-const index = () => {
+const Coaching = () => {
   const [navSelected, setNavSelected] = useContext(NavContext);
   return (
     <main>
@@ -165,4 +165,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Coaching;

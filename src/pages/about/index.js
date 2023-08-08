@@ -10,7 +10,7 @@ import smilingImage from "../../../public/assets/images/smiling.png";
 import Image from "next/image";
 import BtnPrimary from "@/components/Buttons/BtnPrimary";
 
-const index = () => {
+const About = () => {
   const [navSelected, setNavSelected] = useContext(NavContext);
   return (
     <main className="coaching">
@@ -160,4 +160,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default About;
